@@ -13,22 +13,27 @@
         <nav>
             <div class="logo"><span>A</span> Agency.io</div>
             <div class="nav-links">
-                <a href="#">Services</a>
-                <a href="#">Process</a>
-                <a href="#">Work</a>
-                <a href="#">Pricing</a>
+                <a href="#services">Services</a>
+                <a href="#process">Process</a>
+                <a href="#work">Work</a>
+                <a href="#pricing">Pricing</a>
             </div>
-            <a href="#" class="btn btn-primary">Book Call</a>
+            <a href="#contact" class="btn btn-primary desktop-only">Book Call</a>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </nav>
 
-        <section class="hero">
+        <section class="hero" id="home">
             <div class="badge"><span class="badge-dot"></span> Accepting new projects for Q1</div>
             <h1>Turn your expertise into<br><span class="gradient-text">AI-powered Reality</span></h1>
             <p>We help ambitious brands and startups design, build, and scale world-class digital products with a focus on comprehensive design and robust engineering.</p>
             
             <div class="hero-btns">
-                <a href="#" class="btn btn-primary">Start Project ✦</a>
-                <a href="#" class="btn btn-outline">▶ Watch Reel</a>
+                <a href="#contact" class="btn btn-primary">Start Project ✦</a>
+                <a href="#" class="btn btn-outline watch-reel-btn">▶ Watch Reel</a>
             </div>
 
             <div class="trusted-by">
@@ -42,7 +47,7 @@
             </div>
         </section>
 
-        <section class="section-padding">
+        <section class="section-padding" id="services">
             <div class="feature-grid">
                 <div class="feature-content">
                     <h2>Stop wrestling with legacy codebases</h2>
@@ -63,7 +68,7 @@
             </div>
         </section>
 
-        <section class="section-padding">
+        <section class="section-padding" id="process">
             <div style="text-align: center; max-width: 600px; margin: 0 auto;">
                 <h2>Tailored for every stage</h2>
                 <p style="color: var(--text-muted); margin-top: 10px;">Whether you are just starting out or scaling up, we have the specialized workflows to support your growth.</p>
@@ -74,18 +79,18 @@
                     <div class="card-icon icon-yellow">⚡</div>
                     <h3>Startups</h3>
                     <p>Move fast and break nothing. Get your MVP to market in record time with our rapid deployment pipelines.</p>
-                    <a href="#">Learn more →</a>
+                    <a href="#contact">Learn more →</a>
                 </div>
                 <div class="card">
                     <div class="card-icon icon-blue">🛡️</div>
                     <h3>Enterprises</h3>
                     <p>Robust, compliant, and scalable. We build systems that can handle millions of users from day one.</p>
-                    <a href="#">Learn more →</a>
+                    <a href="#contact">Learn more →</a>
                 </div>
             </div>
         </section>
 
-        <section class="section-padding">
+        <section class="section-padding" id="pricing">
             <h2>Why choose us?</h2>
             <table class="comparison-table">
                 <thead>
@@ -119,10 +124,10 @@
             </table>
         </section>
 
-        <section class="cta-section">
+        <section class="cta-section" id="contact">
             <h2 style="font-size: 2.5rem; margin-bottom: 20px;">Ready to build the future?</h2>
             <p style="color: var(--text-muted); margin-bottom: 30px;">Join hundreds of founders and enterprise leaders who trust us with their digital transformation.</p>
-            <a href="#" class="btn btn-primary">Book your consultation</a>
+            <a href="#contact" class="btn btn-primary">Book your consultation</a>
         </section>
     </div>
     
@@ -136,29 +141,35 @@
                 <div class="footer-col">
                     <h4>Company</h4>
                     <ul>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Blog</a></li>
+                        <li><a href="#home">About</a></li>
+                        <li><a href="#contact">Careers</a></li>
+                        <li><a href="#work">Blog</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Resources</h4>
                     <ul>
-                        <li><a href="#">Case Studies</a></li>
-                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#work">Case Studies</a></li>
+                        <li><a href="#contact">Help Center</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Stay Included</h4>
-                    <p style="color: var(--text-muted); font-size: 0.8rem;">Subscribe to our newsletter.</p>
-                    <input type="email" placeholder="Enter your email" class="newsletter-input">
+                    <p style="color: var(--text-muted); font-size: 0.8rem; margin-bottom: 10px;">Subscribe to our newsletter.</p>
+                    <form class="newsletter-form">
+                        <div style="display: flex; gap: 8px;">
+                            <input type="email" placeholder="Enter your email" class="newsletter-input" required>
+                            <button type="submit" class="newsletter-submit btn btn-primary">Subscribe</button>
+                        </div>
+                    </form>
                 </div>
             </div>
             <div style="margin-top: 60px; color: var(--text-muted); font-size: 0.8rem; border-top: 1px solid var(--border-color); padding-top: 20px;">
-                © 2024 Agency.io. All rights reserved.
+                © 2025 Agency.io. All rights reserved.
             </div>
         </div>
     </footer>
 
+    <script type="module" src="script.js"></script>
 </body>
 </html>
